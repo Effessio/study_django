@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Producer {{producer.name}}</title>
+</head>
+<body>
+    <h1>{{producer.name}}</h1>
+    <h2>Products:</h2>
+    <ul>
+        {% for product in products_list %}
+            <li>{{ product.name }}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Producers list</title>
+</head>
+<body>
+<ul>
+    {% for producer in producers_list %}
+        <li><a href="{{ producer.get_absolute_url }}">{{ producer.name }}</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>
